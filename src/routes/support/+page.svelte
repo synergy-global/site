@@ -47,7 +47,7 @@
 				</div>
 				<div class="faq-item">
 					<h3>What are the system requirements?</h3>
-					<p>Windows 10+ or macOS 10.14+, 64-bit processor, 4GB RAM minimum (8GB recommended), and a compatible DAW. GPU acceleration is optional but recommended for real-time processing.</p>
+					<p>macOS 10.14+, 64-bit processor, 8GB RAM minimum (1GB recommended).</p>
 				</div>
 			</div>
 		</div>
