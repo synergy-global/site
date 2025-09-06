@@ -218,20 +218,96 @@
 
 	/* Responsive Design */
 	@media (max-width: 768px) {
+		.container {
+			padding: 0 1rem;
+		}
+
 		.hero {
-			padding: 6rem 0 4rem;
+			padding: 4rem 0 3rem;
 		}
 
 		.hero h1 {
-			font-size: 2.5rem;
+			font-size: 2rem;
+			line-height: 1.2;
 		}
 
 		.hero p {
-			font-size: 1.1rem;
+			font-size: 1rem;
+			line-height: 1.5;
 		}
 
+		.faq {
+			padding: 3rem 0;
+		}
 
+		.faq h2 {
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+		}
 
+		.faq-item {
+			padding: 1.5rem;
+			margin-bottom: 1rem;
+		}
 
+		.faq-item h3 {
+			font-size: 1.1rem;
+			line-height: 1.3;
+			margin-bottom: 0.75rem;
+		}
+
+		.faq-item p {
+			font-size: 0.9rem;
+			line-height: 1.5;
+		}
+
+		.contact {
+			padding: 3rem 0;
+		}
+
+		.contact h2 {
+			font-size: 1.8rem;
+		}
+
+		.contact h3 {
+			font-size: 1.2rem;
+		}
+
+		.contact p {
+			font-size: 0.9rem;
+			line-height: 1.5;
+		}
+
+		.btn-primary,
+		.btn-secondary {
+			width: 100%;
+			max-width: 280px;
+			padding: 1rem 1.5rem;
+			font-size: 1rem;
+			text-align: center;
+			display: block;
+			margin: 0.5rem auto;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero h1 {
+			font-size: 1.8rem;
+		}
+
+		.faq h2,
+		.contact h2 {
+			font-size: 1.5rem;
+		}
+
+		.faq-item {
+			padding: 1rem;
+		}
+
+		.btn-primary,
+		.btn-secondary {
+			padding: 0.9rem 1.2rem;
+			font-size: 0.9rem;
+		}
 	}
 </style>

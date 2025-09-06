@@ -170,7 +170,8 @@
 	</section>
 
 	<!-- Contact CTA -->
-	<section class="contact-cta">
+	<!-- Remove the Contact CTA section -->
+	<!-- <section class="contact-cta">
 		<div class="container">
 			<h2>Ready to Transform Your Sound?</h2>
 			<p>Join thousands of producers and engineers who trust Synergy DSP for their most important projects.</p>
@@ -179,7 +180,7 @@
 				<a href="mailto:contact@synergydsp.com" class="btn-secondary">Get in Touch</a>
 			</div>
 		</div>
-	</section>
+	</section> -->
 </div>
 
 <style>
@@ -331,7 +332,7 @@
 	.timeline::before {
 		content: '';
 		position: absolute;
-		left: 50px;
+		left: -30px; /* Adjust to center with the year element */
 		top: 0;
 		bottom: 0;
 		width: 2px;
