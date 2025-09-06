@@ -60,7 +60,7 @@
 			<div class="contact-info">
 				<h3>Technical Support</h3>
 				<p>For technical issues, installation problems, or plugin-specific questions:</p>
-				<a href="mailto:support@synergydsp.com" class="contact-link">support@synergydsp.com</a>
+				<a href="mailto:support@synergydsp.com" class="contact-link">support@synergy-dsp.com</a>
 				<p class="response-time">Response time: 24-48 hours</p>
 			</div>
 		</div>
