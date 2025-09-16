@@ -35,7 +35,7 @@
 		<div class="header-actions">
 			<div class="store-buttons">
 				<a href="https://synergydsp.gumroad.com" target="_blank" class="store-btn gumroad-btn">Gumroad Store</a>
-				<a href="https://www.musehub.com/brand/synergy-dsp" target="_blank" class="store-btn musehub-btn">Musehub Store</a>
+				<a href="https://www.musehub.com/partner/synergy-dsp" target="_blank" class="store-btn musehub-btn">Musehub Store</a>
 			</div>
 			
 			<!-- Mobile Menu Button -->

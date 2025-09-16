@@ -50,7 +50,7 @@ commitment to transparency and community support.
 <div class="projects-grid">
 <div class="project-card">
 <div class="project-header">
-<h3>ChromaFlow</h3>
+<h3>ChromaFlow (coming soon)</h3>
 <div class="project-links">
 <a href="https://github.com/synergydsp/chromaflow" target="_blank" class="github-link">GitHub</a>
 </div>
