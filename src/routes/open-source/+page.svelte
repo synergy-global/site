@@ -52,7 +52,7 @@ commitment to transparency and community support.
 <div class="project-header">
 <h3>ChromaFlow (coming soon)</h3>
 <div class="project-links">
-<a href="https://github.com/synergydsp/chromaflow" target="_blank" class="github-link">GitHub</a>
+<a href="https://github.com/synergy-global/chromaflow" target="_blank" class="github-link">GitHub</a>
 </div>
 </div>
 <p class="project-description">
