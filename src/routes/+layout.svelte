@@ -28,7 +28,7 @@
 		<nav class="nav">
 			<a href="/" class="nav-link">Home</a>
 			<a href="/about" class="nav-link">About</a>
-			<a href="/open-source" class="nav-link">Open Source</a>
+			<!-- <a href="/open-source" class="nav-link">Open Source</a> -->
 			<a href="/support" class="nav-link">Support</a>
 		</nav>
 		
