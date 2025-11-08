@@ -1,0 +1,6 @@
+[submodule "modules/chromaflow"]
+	path = modules/chromaflow
+	url = https://github.com/synergy-global/chromaFlow.git
+[submodule "modules/fusion-dsp"]
+	path = modules/fusion-dsp
+	url = https://github.com/synergy-global/Fusion-DSP.git

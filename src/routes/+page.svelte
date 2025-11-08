@@ -28,10 +28,7 @@
 					<p class="hero-subtitle">
 						Revolutionary AI-powered audio plugins that adapt to your sound in real-time
 					</p>
-					<div class="hero-actions">
-						<a href="https://synergydsp.gumroad.com/" target="_blank" class="btn-primary">Buy on Gumroad</a>
-						<a href="https://www.musehub.com/partner/synergy-dsp" target="_blank" class="btn-secondary">Buy on Musehub</a>
-					</div>
+
 				</div>
 				<div class="hero-visual">
 					<div class="wave-box">
@@ -74,14 +71,14 @@
 						<h3>LVLR</h3>
 						<p class="plugin-category">AI-Powered Opto Compressor</p>
 						<p class="plugin-description">Revolutionary optical compressor with differential AI technology for intelligent attack and release timing that adapts to your audio in real-time.</p>
-						<div class="plugin-features">
-							<span class="feature-tag ai">Differential AI</span>
-							<span class="feature-tag">Optical Circuit</span>
-							<span class="feature-tag">Zero Latency</span>
-						</div>
-						<div class="plugin-actions">
-							<a href="https://synergydsp.gumroad.com/l/Lvlr" target="_blank" class="btn-plugin-primary">Buy on Gumroad</a>
-						</div>
+					<div class="plugin-features">
+						<span class="feature-tag ai">Differential AI</span>
+						<span class="feature-tag">Optical Circuit</span>
+					</div>
+					<div class="plugin-actions">
+						<a href="/store/lvlr" class="btn-plugin-primary">View Details</a>
+					</div>
+
 					</div>
 				</div>
 
@@ -94,15 +91,15 @@
 						<h3>Millennium V2</h3>
 						<p class="plugin-category">Vintage Tube Console</p>
 						<p class="plugin-description">Authentic vintage console channel strip with 4-band EQ, ML-powered optical compressor, and tube saturation for that classic analog warmth.</p>
-						<div class="plugin-features">
-							<span class="feature-tag vintage">4-Band EQ</span>
-							<span class="feature-tag vintage">ML Opto Comp</span>
-							<span class="feature-tag vintage">Tube Saturation</span>
-						</div>
-						<div class="plugin-actions">
-							<a href="https://synergydsp.gumroad.com/l/MilleniumV2" target="_blank" class="btn-plugin-primary">Buy on Gumroad</a>
-							<a href="https://www.musehub.com/plugin/millennium-v2" target="_blank" class="btn-plugin-secondary">Buy on Musehub</a>
-						</div>
+					<div class="plugin-features">
+						<span class="feature-tag vintage">4-Band EQ</span>
+						<span class="feature-tag vintage">ML Opto Comp</span>
+						<span class="feature-tag vintage">Tube Saturation</span>
+					</div>
+					<div class="plugin-actions">
+						<a href="/store/millennium" class="btn-plugin-primary">View Details</a>
+					</div>
+
 					</div>
 				</div>
 		</div>
@@ -120,7 +117,6 @@
 				<li><a href="/about">About</a></li>
 				<li><a href="/support">Support</a></li>
 				<li><a href="https://synergydsp.gumroad.com" target="_blank">Gumroad Store</a></li>
-				<li><a href="https://www.musehub.com/brand/synergy-dsp" target="_blank">Musehub Store</a></li>
 			</ul>
 		</div>
 		<div class="footer-section">

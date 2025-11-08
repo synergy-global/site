@@ -1,16 +1,17 @@
 <script lang="ts">
-	// Remove the favicon import and use the logo directly
+    // Remove the favicon import and use the logo directly
+    import CookieConsent from '$lib/components/CookieConsent.svelte';
 
-	let { children } = $props();
-	let mobileMenuOpen = $state(false);
+    let { children } = $props();
+    let mobileMenuOpen = $state(false);
 
-	function toggleMobileMenu() {
-		mobileMenuOpen = !mobileMenuOpen;
-	}
+    function toggleMobileMenu() {
+        mobileMenuOpen = !mobileMenuOpen;
+    }
 
-	function closeMobileMenu() {
-		mobileMenuOpen = false;
-	}
+    function closeMobileMenu() {
+        mobileMenuOpen = false;
+    }
 </script>
 
 <svelte:head>
@@ -28,15 +29,13 @@
 		<nav class="nav">
 			<a href="/" class="nav-link">Home</a>
 			<a href="/about" class="nav-link">About</a>
+			<a href="/blog" class="nav-link">Blog</a>
+			<a href="/store" class="nav-link">Store</a>
 			<!-- <a href="/open-source" class="nav-link">Open Source</a> -->
 			<a href="/support" class="nav-link">Support</a>
 		</nav>
 		
 		<div class="header-actions">
-			<div class="store-buttons">
-				<a href="https://synergydsp.gumroad.com" target="_blank" class="store-btn gumroad-btn">Gumroad Store</a>
-				<a href="https://www.musehub.com/partner/synergy-dsp" target="_blank" class="store-btn musehub-btn">Musehub Store</a>
-			</div>
 			
 			<!-- Mobile Menu Button -->
 			<button class="mobile-menu-btn" class:menu-open={mobileMenuOpen} onclick={toggleMobileMenu} aria-label="Toggle menu" aria-expanded={mobileMenuOpen}>
@@ -47,40 +46,64 @@
 	</div>
 	
 	<!-- Mobile Menu moved below header -->
+		<div class="mobile-menu" class:open={mobileMenuOpen}>
+			<nav class="mobile-nav">
+				<a href="/" class="mobile-nav-link" onclick={closeMobileMenu}>Home</a>
+				<a href="/about" class="mobile-nav-link" onclick={closeMobileMenu}>About</a>
+				<a href="/blog" class="mobile-nav-link" onclick={closeMobileMenu}>Blog</a>
+				<a href="/store" class="mobile-nav-link" onclick={closeMobileMenu}>Store</a>
+				<a href="/support" class="mobile-nav-link" onclick={closeMobileMenu}>Support</a>
+			</nav>
+		</div>
 </header>
 
 <!-- Mobile Menu (outside header to avoid stacking issues) -->
-<div class="mobile-menu" class:open={mobileMenuOpen} aria-hidden={!mobileMenuOpen}
-	style:transform={`translateX(${mobileMenuOpen ? '0' : '-100%'})`}
-	style:opacity={mobileMenuOpen ? 1 : 0}
-	style:visibility={mobileMenuOpen ? 'visible' : 'hidden'}>
-	<nav class="mobile-nav">
-		<a href="/" onclick={closeMobileMenu}>Home</a>
-		<a href="/about" onclick={closeMobileMenu}>About</a>
-		<a href="/open-source" onclick={closeMobileMenu}>Open Source</a>
-		<a href="/support" onclick={closeMobileMenu}>Support</a>
-		<div class="mobile-store-buttons">
-			<a href="https://synergydsp.gumroad.com" target="_blank" class="mobile-store-btn gumroad">Gumroad Store</a>
-			<a href="https://www.musehub.com/brand/synergy-dsp" target="_blank" class="mobile-store-btn musehub">Musehub Store</a>
-		</div>
-	</nav>
-</div>
+	<div class="mobile-menu" class:open={mobileMenuOpen} aria-hidden={!mobileMenuOpen}
+		style:transform={`translateX(${mobileMenuOpen ? '0' : '-100%'})`}
+		style:opacity={mobileMenuOpen ? 1 : 0}
+		style:visibility={mobileMenuOpen ? 'visible' : 'hidden'}>
+		<nav class="mobile-nav">
+			<a href="/" onclick={closeMobileMenu}>Home</a>
+			<a href="/about" onclick={closeMobileMenu}>About</a>
+			<a href="/blog" onclick={closeMobileMenu}>Blog</a>
+			<a href="/open-source" onclick={closeMobileMenu}>Open Source</a>
+			<a href="/support" onclick={closeMobileMenu}>Support</a>
+		</nav>
+	</div>
 
 <main>
-	{@render children?.()}
+    {@render children?.()}
 </main>
 
+<!-- Cookie Consent Banner -->
+<CookieConsent />
+
 <style>
+	:root {
+		--bg: #0b0b0d;
+		--surface: #121214;
+		--surface-2: #151518;
+		--border: rgba(255, 255, 255, 0.08);
+		--text: rgba(255, 255, 255, 0.92);
+		--muted: rgba(255, 255, 255, 0.7);
+		--brand-start: #6e7bf7;
+		--brand-end: #a78bfa;
+	}
 	:global(html) {
 		lang: en;
 	}
 
 	:global(body) {
 		margin: 0;
-		font-family: 'Inter', sans-serif;
-		background: #0f0f23;
-		color: white;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Inter', sans-serif;
+		background: var(--bg);
+		color: var(--text);
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
+
+	/* Removed blue/green link and selection accents to revert theme */
 
 	/* Header Styles */
 	.header {
@@ -89,10 +112,10 @@
 		left: 0;
 		right: 0;
 		z-index: 1000;
-		background: rgba(15, 15, 35, 0.9);
-		backdrop-filter: blur(20px);
-		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-		padding: 1rem 0;
+		background: rgba(18, 18, 20, 0.7);
+		backdrop-filter: blur(12px);
+		border-bottom: 1px solid var(--border);
+		padding: 0.75rem 0;
 	}
 
 	.header-container {
@@ -123,12 +146,9 @@
 	}
 
 	.logo-text {
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 		font-weight: 700;
-		background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+		color: var(--text);
 	}
 
 	.nav {
@@ -148,10 +168,10 @@
 	} */
 
 	.nav-link {
-		color: rgba(255, 255, 255, 0.8);
+		color: var(--muted);
 		text-decoration: none;
 		font-weight: 500;
-		transition: all 0.3s ease;
+		transition: color 0.2s ease;
 		position: relative;
 		display: block;
 	}
@@ -163,12 +183,12 @@
 	.nav-link::after {
 		content: '';
 		position: absolute;
-		bottom: -5px;
+		bottom: -6px;
 		left: 0;
 		width: 0;
 		height: 2px;
-		background: linear-gradient(135deg, #6366f1, #8b5cf6);
-		transition: width 0.3s ease;
+		background: linear-gradient(135deg, var(--brand-start), var(--brand-end));
+		transition: width 0.2s ease;
 	}
 
 	.nav-link:hover::after {
@@ -213,7 +233,7 @@
 	}
 
 	.gumroad-btn {
-		background: linear-gradient(135deg, #6366f1, #8b5cf6);
+		background: linear-gradient(135deg, var(--brand-start), var(--brand-end));
 		box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 	}
 
@@ -308,10 +328,10 @@
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background: rgba(10, 10, 10, 0.98);
-		backdrop-filter: blur(10px);
+		background: rgba(15, 15, 17, 0.9);
+		backdrop-filter: blur(12px);
 		transform: translateX(-100%);
-		transition: all 0.3s ease;
+		transition: all 0.25s ease;
 		z-index: 1002;
 		display: block;
 		visibility: hidden;
@@ -344,7 +364,7 @@
 	}
 
 	.mobile-nav a:hover {
-		color: #4a9eff;
+		color: var(--text);
 	}
 
 	.mobile-store-buttons {
@@ -364,9 +384,10 @@
 	}
 
 	.mobile-store-btn.gumroad {
-		background: linear-gradient(135deg, #6366f1, #8b5cf6);
+		background: linear-gradient(135deg, var(--brand-start), var(--brand-end));
 		color: white;
 	}
+
 
 	.mobile-store-btn.musehub {
 		background: linear-gradient(135deg, #10b981, #059669);
@@ -375,6 +396,80 @@
 
 	main {
 		padding-top: 80px; /* Push content below fixed header */
+	}
+
+	/* Global buttons and surfaces */
+	:global(.btn-primary),
+	:global(.btn-plugin-primary) {
+		background: linear-gradient(135deg, var(--brand-start), var(--brand-end));
+		color: white;
+		border: 1px solid var(--border);
+		border-radius: 10px;
+		padding: 0.75rem 1.25rem;
+		font-weight: 600;
+		text-decoration: none;
+		transition: transform 0.15s ease, opacity 0.2s ease;
+	}
+
+	:global(.btn-primary:hover),
+	:global(.btn-plugin-primary:hover) {
+		transform: translateY(-1px);
+		opacity: 0.95;
+	}
+
+	:global(.btn-secondary) {
+		background: rgba(255, 255, 255, 0.06);
+		border: 1px solid var(--border);
+		color: var(--text);
+		border-radius: 10px;
+		padding: 0.75rem 1.25rem;
+		font-weight: 600;
+		text-decoration: none;
+		transition: transform 0.15s ease, opacity 0.2s ease;
+	}
+
+	:global(.btn-secondary:hover) {
+		transform: translateY(-1px);
+		opacity: 0.95;
+	}
+
+	:global(.btn-details),
+	:global(.btn-buy) {
+		background: rgba(255, 255, 255, 0.06);
+		border: 1px solid var(--border);
+		color: var(--text);
+		border-radius: 10px;
+		padding: 0.65rem 1rem;
+		font-weight: 600;
+		text-decoration: none;
+		transition: transform 0.15s ease, opacity 0.2s ease;
+	}
+
+	:global(.btn-details:hover),
+	:global(.btn-buy:hover) {
+		transform: translateY(-1px);
+		opacity: 0.95;
+	}
+
+	:global(.product-card),
+	:global(.plugin-card) {
+		background: var(--surface);
+		border: 1px solid var(--border);
+		border-radius: 16px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+	}
+
+	:global(.product-content),
+	:global(.plugin-info) {
+		background: var(--surface-2);
+		border: 1px solid var(--border);
+		border-radius: 16px;
+	}
+
+	:global(.plugin-description),
+	:global(.product-description),
+	:global(.hero-subtitle) {
+		color: var(--muted);
 	}
 
 	/* Responsive */
