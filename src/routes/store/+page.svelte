@@ -6,6 +6,20 @@
 	// Product data
 	const products = [
 		{
+			id: 'anaverb-v2',
+			name: 'ANAVERB V2',
+			description: 'Reverb with AI-driven, context-aware depth that locks sounds in place fast.',
+			price: '£4.99',
+			image: '/anaverb-v2.png',
+			features: [
+				'Context-aware AI analysis',
+				'Temporal latent control',
+				'Spectral damping',
+				'Spatial width distribution'
+			],
+			gumroadLink: 'https://synergydsp.gumroad.com/l/hudwyb'
+		},
+		{
 			id: 'lvlr',
 			name: 'LVLR',
 			description: 'Advanced AI-powered dynamics processor for adaptive, transparent control.',
@@ -23,7 +37,7 @@
 			id: 'millennium',
 			name: 'Millennium V2',
 			description: 'Vintage tube console VST for analog warmth, clarity, and control.',
-			price: '£49.99',
+			price: '£14.99',
 			image: '/millenium v2.avif',
 			features: [
 				'Enhanced preamp section',

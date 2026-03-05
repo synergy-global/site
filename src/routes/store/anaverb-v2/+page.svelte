@@ -1,5 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 
 	let mounted = false;
 
@@ -9,8 +9,12 @@
 </script>
 
 <svelte:head>
-	<title>LVLR - Synergy DSP</title>
-    <meta name="description" content="LVLR is an advanced AI-powered dynamics processor that adapts to your audio in real-time with adaptive compression and transparent dynamics control." />
+	<title>ANAVERB V2 - Synergy DSP</title>
+	<meta
+		name="description"
+		content="Reverb with AI-driven, context-aware depth that locks sounds in place fast. ANAVERB V2 listens over time and reshapes space in real time for clean, musical tails."
+	/>
+	<script src="https://gumroad.com/js/gumroad.js"></script>
 </svelte:head>
 
 <main class="product-page" class:mounted>
@@ -22,7 +26,7 @@
 				<span>/</span>
 				<a href="/store">Store</a>
 				<span>/</span>
-				<span>LVLR</span>
+				<span>ANAVERB V2</span>
 			</div>
 		</div>
 	</nav>
@@ -32,14 +36,24 @@
 		<div class="container">
 			<div class="product-grid">
 				<div class="product-image">
-					<img src="/lvlr.png" alt="LVLR Plugin Interface" />
+					<img
+						src="/anaverb-v2.png"
+						alt="ANAVERB V2 Plugin Interface"
+					/>
 				</div>
 				<div class="product-info">
-					<h1>LVLR</h1>
-					<p class="product-tagline">Advanced AI-powered dynamics processor</p>
-					<div class="product-price">£79.99</div>
+					<h1>ANAVERB V2</h1>
+					<p class="product-tagline">
+						Reverb with AI-driven, context-aware depth that locks
+						sounds in place fast.
+					</p>
+					<div class="product-price">£4.99</div>
 					<div class="product-actions">
-						<a class="gumroad-button" href="https://synergydsp.gumroad.com/l/Lvlr" data-gumroad-overlay-checkout="true">Buy on</a>
+						<a
+							class="gumroad-button"
+							href="https://synergydsp.gumroad.com/l/Anaverbv2"
+							data-gumroad-overlay-checkout="true">Buy on</a
+						>
 					</div>
 				</div>
 			</div>
@@ -50,12 +64,29 @@
 	<section class="product-description">
 		<div class="container">
 			<div class="description-content">
-				<h2>About LVLR</h2>
+				<h2>About ANAVERB V2</h2>
 				<p>
-					LVLR is a revolutionary dynamics processor that leverages our Generative DSP technology to provide intelligent, adaptive audio processing. Unlike traditional compressors and limiters, LVLR analyzes your audio in real-time and automatically adjusts its parameters for optimal results.
+					ANAVERB V2 is a self-supervised, context-aware adaptive
+					reverb engine built for engineers who want placement, depth,
+					and control without the preset lottery. Instead of
+					randomizing your mix, the AI models the incoming signal’s
+					behavior across time and continuously refines the internal
+					room structure.
 				</p>
 				<p>
-					Whether you're mixing vocals, drums, or full mixes, LVLR delivers transparent dynamics control with minimal effort. Its AI-driven engine understands the nuances of your audio, providing consistent levels without the pumping and artifacts common in conventional processors.
+					The result is a sense of space that feels carved around the
+					source, with early reflections that settle quickly and tails
+					that stay clear instead of smearing. Width stays open and
+					stable, so stereo doesn’t collapse when the arrangement gets
+					dense. Decay remains musical under movement, so automation,
+					dynamics, and performance changes stay believable.
+				</p>
+				<p>
+					Dial "Behaviour" to move from tight, focused ambience to
+					expansive, breathing halls, while keeping the reverb usable,
+					controlled, and mix-ready. Designed for modern mixing and
+					sound design where space must sit fast, feel intentional,
+					and stay out of the way.
 				</p>
 			</div>
 		</div>
@@ -66,32 +97,54 @@
 		<div class="container">
 			<h2>Key Features</h2>
 			<div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3>Program-Dependent Response</h3>
-                    <p>Adaptive behavior that reacts musically to source material, maintaining transparency while controlling dynamics.</p>
-                </div>
 				<div class="feature-card">
-					<div class="feature-icon">🔄</div>
-					<h3>Adaptive Compression</h3>
-					<p>The AI-driven compression engine adapts to your audio in real-time, providing transparent dynamics control that respects the natural character of your sound.</p>
+					<div class="feature-icon">🧠</div>
+					<h3>Context-Aware AI Analysis</h3>
+					<p>
+						Adaptive reverb behavior that listens over time to
+						reshape space in real time.
+					</p>
 				</div>
 				<div class="feature-card">
-					<div class="feature-icon">⚡</div>
-					<h3>Responsive Performance</h3>
-					<p>Designed for modern workflows, ensuring smooth operation across typical production scenarios.</p>
+					<div class="feature-icon">⏱️</div>
+					<h3>Temporal Latent Control</h3>
+					<p>
+						Adjusts diffusion behavior and micro-modulation depth
+						for evolving textures.
+					</p>
 				</div>
-
+				<div class="feature-card">
+					<div class="feature-icon">🌊</div>
+					<h3>Spectral Damping</h3>
+					<p>
+						Stays smooth and natural, avoiding metallic spirals
+						common in algorithmic reverbs.
+					</p>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🌌</div>
+					<h3>Spatial Width Distribution</h3>
+					<p>
+						Provides depth and breadth without splashy
+						over-diffusion, keeping stereo images stable.
+					</p>
+				</div>
 				<div class="feature-card">
 					<div class="feature-icon">🎛️</div>
-					<h3>Intuitive Interface</h3>
-					<p>The clean, modern interface provides visual feedback and simple controls that make complex dynamics processing accessible to everyone.</p>
+					<h3>Single Macro Control</h3>
+					<p>
+						"Behaviour" shapes how the space reacts to the signal,
+						from tight ambience to expansive halls.
+					</p>
 				</div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎚️</div>
-                    <h3>Mix-Ready Presets</h3>
-                    <p>Useful starting points for common tasks to speed up workflow without complex setup.</p>
-                </div>
+				<div class="feature-card">
+					<div class="feature-icon">🔄</div>
+					<h3>Internal Feedback Topology</h3>
+					<p>
+						Advanced control within bounded DSP constraints for
+						stable, musical feedback.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -107,9 +160,11 @@
 				</div>
 				<div class="spec-item">
 					<h3>System Requirements</h3>
-					<p>macOS 10.14 or higher, 64-bit processor, 8GB RAM minimum (16GB recommended)</p>
+					<p>
+						macOS 10.14 or higher, 64-bit processor, 8GB RAM minimum
+						(16GB recommended)
+					</p>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -118,10 +173,17 @@
 	<section class="cta">
 		<div class="container">
 			<div class="cta-content">
-				<h2>Ready to Transform Your Mixes?</h2>
-				<p>Join thousands of producers and engineers who trust LVLR for their most important projects.</p>
+				<h2>Transform Your Spatial Audio</h2>
+				<p>
+					Experience reverb that listens, adapts, and enhances your
+					mix without the clutter.
+				</p>
 				<div class="cta-buttons">
-					<a class="gumroad-button" href="https://synergydsp.gumroad.com/l/Lvlr" data-gumroad-overlay-checkout="true">Buy on</a>
+					<a
+						class="gumroad-button"
+						href="https://synergydsp.gumroad.com/l/Anaverbv2"
+						data-gumroad-overlay-checkout="true">Buy on</a
+					> 
 				</div>
 			</div>
 		</div>
@@ -134,22 +196,30 @@
 			<div class="related-grid">
 				<div class="related-card">
 					<div class="related-image">
-						<img src="/anaverb-v2.png" alt="ANAVERB V2" />
-					</div>
-					<div class="related-content">
-						<h3>ANAVERB V2</h3>
-						<p>Reverb with AI-driven, context-aware depth that locks sounds in place fast.</p>
-						<a href="/store/anaverb-v2" class="btn-view">View Details</a>
-					</div>
-				</div>
-				<div class="related-card">
-					<div class="related-image">
 						<img src="/millenium v2.avif" alt="Millennium V2" />
 					</div>
 					<div class="related-content">
 						<h3>Millennium V2</h3>
-						<p>Next-generation reverb plugin with AI-driven space modeling and advanced controls.</p>
-						<a href="/store/millennium" class="btn-view">View Details</a>
+						<p>
+							Vintage tube console VST delivering analog warmth,
+							clarity, and control.
+						</p>
+						<a href="/store/millennium" class="btn-view"
+							>View Details</a
+						>
+					</div>
+				</div>
+				<div class="related-card">
+					<div class="related-image">
+						<img src="/lvlr.png" alt="LVLR" />
+					</div>
+					<div class="related-content">
+						<h3>LVLR</h3>
+						<p>
+							Advanced AI-powered dynamics processor that adapts
+							to your audio in real-time.
+						</p>
+						<a href="/store/lvlr" class="btn-view">View Details</a>
 					</div>
 				</div>
 			</div>
@@ -160,7 +230,12 @@
 <style>
 	.product-page {
 		min-height: 100vh;
-		background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+		background: linear-gradient(
+			135deg,
+			#0f0f23 0%,
+			#1a1a2e 50%,
+			#16213e 100%
+		);
 		color: white;
 		opacity: 0;
 		transform: translateY(20px);
@@ -259,32 +334,6 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
-	}
-
-	.btn-buy {
-		display: inline-block;
-		padding: 1rem 1.5rem;
-		text-decoration: none;
-		border-radius: 8px;
-		font-weight: 600;
-		text-align: center;
-		transition: all 0.3s ease;
-	}
-
-	.btn-buy.gumroad {
-		background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-		color: white;
-	}
-
-	.btn-buy.musehub {
-		background: rgba(255, 255, 255, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		color: white;
-	}
-
-	.btn-buy:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 	}
 
 	/* Product Description */
@@ -406,7 +455,11 @@
 	/* Call to Action */
 	.cta {
 		padding: 6rem 0;
-		background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+		background: linear-gradient(
+			135deg,
+			rgba(99, 102, 241, 0.1) 0%,
+			rgba(139, 92, 246, 0.1) 100%
+		);
 	}
 
 	.cta-content {
@@ -433,35 +486,6 @@
 		display: flex;
 		justify-content: center;
 		gap: 1.5rem;
-	}
-
-	.btn-primary {
-		display: inline-block;
-		padding: 1rem 2rem;
-		background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-		color: white;
-		text-decoration: none;
-		border-radius: 8px;
-		font-weight: 600;
-		transition: all 0.3s ease;
-	}
-
-	.btn-secondary {
-		display: inline-block;
-		padding: 1rem 2rem;
-		background: rgba(255, 255, 255, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		color: white;
-		text-decoration: none;
-		border-radius: 8px;
-		font-weight: 600;
-		transition: all 0.3s ease;
-	}
-
-	.btn-primary:hover,
-	.btn-secondary:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 	}
 
 	/* Related Products */

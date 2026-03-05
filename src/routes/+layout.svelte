@@ -31,7 +31,7 @@
 			<a href="/about" class="nav-link">About</a>
 			<a href="/blog" class="nav-link">Blog</a>
 			<a href="/store" class="nav-link">Store</a>
-			<!-- <a href="/open-source" class="nav-link">Open Source</a> -->
+			<a href="/open-source" class="nav-link">Open Source</a>
 			<a href="/support" class="nav-link">Support</a>
 		</nav>
 		

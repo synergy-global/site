@@ -22,8 +22,8 @@
 
 	<!-- FAQ Section -->
 	<section class="faq">
-		<div class="container">
-			<h2>Frequently Asked Questions</h2>
+		<div class="container"> 
+			<h2 style="color: white;">Frequently Asked Questions</h2>
 			<div class="faq-list">
 				<div class="faq-item">
 					<h3>Why do you only sell on Gumroad & Musehub?</h3>

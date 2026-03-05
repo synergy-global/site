@@ -37,7 +37,7 @@
 				<div class="product-info">
 					<h1>Millennium V2</h1>
 					<p class="product-tagline">Vintage tube console VST: warmth, clarity, control</p>
-					<div class="product-price">£49.99</div>
+					<div class="product-price">£14.99</div>
 					<div class="product-actions">
 						<a class="gumroad-button" href="https://synergydsp.gumroad.com/l/MilleniumV2" data-gumroad-overlay-checkout="true">Buy on</a>
 					</div>
@@ -136,6 +136,16 @@
 		<div class="container">
 			<h2>You May Also Like</h2>
 			<div class="related-grid">
+				<div class="related-card">
+					<div class="related-image">
+						<img src="/anaverb-v2.png" alt="ANAVERB V2" />
+					</div>
+					<div class="related-content">
+						<h3>ANAVERB V2</h3>
+						<p>Reverb with AI-driven, context-aware depth that locks sounds in place fast.</p>
+						<a href="/store/anaverb-v2" class="btn-view">View Details</a>
+					</div>
+				</div>
 				<div class="related-card">
 					<div class="related-image">
 						<img src="/lvlr.png" alt="LVLR" />
