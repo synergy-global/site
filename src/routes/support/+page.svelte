@@ -15,8 +15,8 @@
 	<!-- Hero Section -->
 	<section class="hero">
 		<div class="container">
-			<h1>Support Center</h1>
-			<p>Get the help you need to make the most of your Synergy DSP plugins</p>
+			<h1 style="color: white;">Support Center</h1>
+			<p style="color: white;">Get the help you need to make the most of your Synergy DSP plugins</p>
 		</div>
 	</section>
 
