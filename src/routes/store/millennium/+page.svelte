@@ -39,7 +39,10 @@
 					<p class="product-tagline">Vintage tube console VST: warmth, clarity, control</p>
 					<div class="product-price">£14.99</div>
 					<div class="product-actions">
-						<a class="gumroad-button" href="https://synergydsp.gumroad.com/l/MilleniumV2" data-gumroad-overlay-checkout="true">Buy on</a>
+						<a class="btn-musehub" href="https://www.musehub.com/plugin/millennium-v2?utm_source=synergy-dsp&utm_medium=synergy-dsp-web&utm_campaign=millennium-v2" target="_blank" rel="noopener noreferrer">
+							<span>Buy on</span>
+							<img src="/musehub_wordmark_transparentbg.svg" alt="MuseHub" class="musehub-logo" />
+						</a>
 					</div>
 				</div>
 			</div>
@@ -125,7 +128,10 @@
 				<h2>Transform Your Spatial Audio</h2>
 				<p>Join the thousands of producers, sound designers, and composers who rely on Millennium V2 for their most important projects.</p>
 				<div class="cta-buttons">
-					<a class="gumroad-button" href="https://synergydsp.gumroad.com/l/MilleniumV2" data-gumroad-overlay-checkout="true">Buy on</a>
+					<a class="btn-musehub" href="https://www.musehub.com/plugin/millennium-v2?utm_source=synergy-dsp&utm_medium=synergy-dsp-web&utm_campaign=millennium-v2" target="_blank" rel="noopener noreferrer">
+						<span>Buy on</span>
+						<img src="/musehub_wordmark_transparentbg.svg" alt="MuseHub" class="musehub-logo" />
+					</a>
 				</div>
 			</div>
 		</div>
@@ -144,16 +150,6 @@
 						<h3>ANAVERB V2</h3>
 						<p>Reverb with AI-driven, context-aware depth that locks sounds in place fast.</p>
 						<a href="/store/anaverb-v2" class="btn-view">View Details</a>
-					</div>
-				</div>
-				<div class="related-card">
-					<div class="related-image">
-						<img src="/lvlr.png" alt="LVLR" />
-					</div>
-					<div class="related-content">
-						<h3>LVLR</h3>
-						<p>Advanced AI-powered dynamics processor that adapts to your audio in real-time with adaptive compression.</p>
-						<a href="/store/lvlr" class="btn-view">View Details</a>
 					</div>
 				</div>
 			</div>
@@ -260,35 +256,35 @@
 	}
 
 	.product-actions {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
 		gap: 1rem;
 	}
 
-	.btn-buy {
-		display: inline-block;
-		padding: 1rem 1.5rem;
+	.btn-musehub {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		padding: 0.75rem 1.5rem;
+		background: #000000;
+		color: #ffffff;
 		text-decoration: none;
 		border-radius: 8px;
 		font-weight: 600;
-		text-align: center;
 		transition: all 0.3s ease;
+		border: 1px solid rgba(255, 255, 255, 0.1);
 	}
 
-	.btn-buy.gumroad {
-		background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-		color: white;
-	}
-
-	.btn-buy.musehub {
-		background: rgba(255, 255, 255, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		color: white;
-	}
-
-	.btn-buy:hover {
+	.btn-musehub:hover {
 		transform: translateY(-2px);
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		background: #111111;
+		border-color: rgba(255, 255, 255, 0.2);
+	}
+
+	.musehub-logo {
+		height: 26px;
+		width: auto;
 	}
 
 	/* Product Description */

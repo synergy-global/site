@@ -17,21 +17,8 @@
 				'Spectral damping',
 				'Spatial width distribution'
 			],
-			gumroadLink: 'https://synergydsp.gumroad.com/l/hudwyb'
-		},
-		{
-			id: 'lvlr',
-			name: 'LVLR',
-			description: 'Advanced AI-powered dynamics processor for adaptive, transparent control.',
-			price: '£79.99',
-			image: '/lvlr.png',
-			features: [
-				'Program-dependent response',
-				'Adaptive compression',
-				'Real-time analysis'
-			],
-			gumroadLink: 'https://synergydsp.gumroad.com/l/Lvlr',
-			musehubLink: 'https://www.musehub.com/brand/synergy-dsp'
+			gumroadLink: 'https://synergydsp.gumroad.com/l/hudwyb',
+			musehubLink: 'https://www.musehub.com/plugin/anaverb-v2?utm_source=synergy-dsp&utm_medium=synergy-dsp-web&utm_campaign=anaverb-v2'
 		},
 		{
 			id: 'millennium',
@@ -47,7 +34,7 @@
 				'Vintage tube coloration'
 			],
 			gumroadLink: 'https://synergydsp.gumroad.com/l/MilleniumV2',
-			musehubLink: 'https://www.musehub.com/brand/synergy-dsp'
+			musehubLink: 'https://www.musehub.com/plugin/millennium-v2?utm_source=synergy-dsp&utm_medium=synergy-dsp-web&utm_campaign=millennium-v2'
 		}
 	];
 
@@ -92,7 +79,11 @@
 							</div>
 					<div class="product-price">{product.price}</div>
 					<div class="product-actions">
-						<a href={`/store/${product.id}`} class="btn-details">View Details</a>
+						<a href={`/store/${product.id}`} class="btn-details">Details</a>
+						<a href={product.musehubLink} class="btn-musehub" target="_blank" rel="noopener noreferrer">
+							<span>Buy on</span>
+							<img src="/musehub_wordmark_transparentbg.svg" alt="MuseHub" class="musehub-logo" />
+						</a>
 					</div>
 					</div>
 				</div>
@@ -305,14 +296,16 @@
 	}
 
 	.product-actions {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+		gap: 0.75rem;
 	}
 
 	.btn-details {
-		display: inline-block;
-		padding: 0.75rem 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.75rem 1rem;
 		background: rgba(139, 92, 246, 0.1);
 		border: 1px solid rgba(139, 92, 246, 0.3);
 		color: white;
@@ -326,6 +319,33 @@
 	.btn-details:hover {
 		background: rgba(139, 92, 246, 0.2);
 		border-color: rgba(139, 92, 246, 0.5);
+	}
+
+	.btn-musehub {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		padding: 0.75rem 1rem;
+		background: #000000;
+		color: #ffffff;
+		text-decoration: none;
+		border-radius: 8px;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.btn-musehub:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		background: #111111;
+		border-color: rgba(255, 255, 255, 0.2);
+	}
+
+	.musehub-logo {
+		height: 22px;
+		width: auto;
 	}
 
 	.store-buttons {

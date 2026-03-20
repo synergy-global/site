@@ -77,7 +77,7 @@
 					</p>
 					<p>
 						We are committed to setting new technological standards, providing industry-leading insights 
-						and tools. Synergy DSP: <strong>Crafted by engineers, for engineers.</strong>
+						and tools through our exclusive distribution partnership with MuseHub. Synergy DSP: <strong>Crafted by engineers, for engineers.</strong>
 					</p>
 				</div>
 				<div class="timeline">
@@ -98,8 +98,22 @@
 					<div class="timeline-item">
 						<div class="year">2024</div>
 						<div class="content">
-							<h4>Industry Leadership</h4>
-							<p>Launched LVLR and Millennium V2, setting new technological standards in audio machine learning.</p>
+							<h4>MuseHub Exclusivity</h4>
+							<p>Synergy DSP establishes an exclusivity partnership with MuseHub, the premier platform for innovative audio software.</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="year">2025</div>
+						<div class="content">
+							<h4>Millennium V2</h4>
+							<p>Released Millennium V2, a vintage tube console VST featuring ML-powered opto-compression and an upgraded UI.</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="year">2026</div>
+						<div class="content">
+							<h4>ANAVERB V2</h4>
+							<p>Launched ANAVERB V2, the first ChromaFlow Neural Network enabled VST, bringing context to real-time audio.</p>
 						</div>
 					</div>
 				</div>
@@ -144,7 +158,7 @@
 				<div class="team-member">
 					<div class="member-info">
 						<h3>Leon Starr</h3>
-						<div class="role">Founder/CEO, Distinguished Engineer</div>
+						<div class="role">Founder/CTO, Distinguished Engineer</div>
 						<div class="specialty">Lead for DSP, AI & Innovation</div>
 						<p>
 							Currently pursuing a PhD, Leon's work at Synergy centers around DSP and developing 
@@ -156,7 +170,7 @@
 				<div class="team-member">
 					<div class="member-info">
 						<h3>James</h3>
-						<div class="role">Lead for GUI</div>
+						<div class="role">CEO, Lead for GUI</div>
 						<div class="specialty">User Interface Design</div>
 						<p>
 							James leads the GUI development, ensuring that Synergy DSP's powerful audio 

@@ -62,26 +62,6 @@
 			<p class="section-subtitle">AI-powered audio processing tools for modern producers</p>
 			
 			<div class="plugins-grid">
-				<!-- LVLR - AI Opto Compressor -->
-				<div class="plugin-card featured">
-					<div class="plugin-image">
-						<img src="/lvlr.png" alt="LVLR AI Opto Compressor" class="vst-image" />
-					</div>
-					<div class="plugin-info">
-						<h3>LVLR</h3>
-						<p class="plugin-category">AI-Powered Opto Compressor</p>
-						<p class="plugin-description">Revolutionary optical compressor with differential AI technology for intelligent attack and release timing that adapts to your audio in real-time.</p>
-					<div class="plugin-features">
-						<span class="feature-tag ai">Differential AI</span>
-						<span class="feature-tag">Optical Circuit</span>
-					</div>
-					<div class="plugin-actions">
-						<a href="/store/lvlr" class="btn-plugin-primary">View Details</a>
-					</div>
-
-					</div>
-				</div>
-
 				<!-- Millennium V2 - Tube Console -->
 				<div class="plugin-card featured">
 					<div class="plugin-image">
@@ -122,8 +102,7 @@
 		<div class="footer-section">
 			<h4>Products</h4>
 			<ul class="footer-links">
-				<li><a href="https://synergydsp.gumroad.com/l/Lvlr" target="_blank">LVLR</a></li>
-				<li><a href="https://synergydsp.gumroad.com/l/MilleniumV2" target="_blank">Millennium V2</a></li>
+				<li><a href="https://www.musehub.com/plugin/millennium-v2?utm_source=synergy-dsp&utm_medium=synergy-dsp-web&utm_campaign=millennium-v2" target="_blank">Millennium V2</a></li>
 			</ul>
 		</div>
 	</div>

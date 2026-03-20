@@ -26,20 +26,12 @@
 			<h2 style="color: white;">Frequently Asked Questions</h2>
 			<div class="faq-list">
 				<div class="faq-item">
-					<h3>Why do you only sell on Gumroad & Musehub?</h3>
-					<p>We've chosen Gumroad and Musehub as our exclusive distribution partners because they provide the best experience for both creators and customers. These platforms offer secure payment processing, instant delivery, automatic updates, and excellent customer support. This allows us to focus on what we do best - creating innovative DSP plugins - while ensuring you get reliable service and support.</p>
-				</div>
-				<div class="faq-item">
 					<h3>What DAWs are supported?</h3>
 					<p>Our plugins support all major DAWs including Logic Pro, Ableton Live, FL Studio, Cubase, Studio One, and more. We provide VST3 and AU formats.</p>
 				</div>
 				<div class="faq-item">
 					<h3>Why Mac only?</h3>
 					<p>We currently focus exclusively on macOS to ensure the highest quality and performance for our plugins. This allows us to optimize our DSP algorithms specifically for Apple's hardware and audio frameworks, delivering superior real-time processing and stability. We're considering Windows support for future releases based on user demand.</p>
-				</div>
-				<div class="faq-item">
-					<h3>Can I use the plugins on multiple computers?</h3>
-					<p>Yes, your license allows installation on up to 3 computers for personal use. For commercial studios, please contact us for multi-seat licensing options.</p>
 				</div>
 				<div class="faq-item">
 					<h3>How do I get updates?</h3>

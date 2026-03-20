@@ -31,7 +31,6 @@
 			<a href="/about" class="nav-link">About</a>
 			<a href="/blog" class="nav-link">Blog</a>
 			<a href="/store" class="nav-link">Store</a>
-			<a href="/open-source" class="nav-link">Open Source</a>
 			<a href="/support" class="nav-link">Support</a>
 		</nav>
 		
@@ -66,7 +65,6 @@
 			<a href="/" onclick={closeMobileMenu}>Home</a>
 			<a href="/about" onclick={closeMobileMenu}>About</a>
 			<a href="/blog" onclick={closeMobileMenu}>Blog</a>
-			<a href="/open-source" onclick={closeMobileMenu}>Open Source</a>
 			<a href="/support" onclick={closeMobileMenu}>Support</a>
 		</nav>
 	</div>
