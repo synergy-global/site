@@ -3,7 +3,7 @@
 
 	const post = {
 		title: 'State of Synergy 2026',
-		subtitle: 'Building an AI Audio Platform within the Muse Group Ecosystem via Muse Hub',
+		subtitle: 'Building an AI Audio Platform within the Muse Hub Ecosystem',
 		author: 'Leon Starr',
 		authorTitle: 'Founder & Principal Architect, Synergy DSP',
 		date: '2026-03-22',
@@ -183,7 +183,7 @@
 				</p>
 
 				<p class="body-text">
-					By aligning with Muse Group and focusing on delivery through Muse Hub, we are laying the groundwork for a different kind of audio experience—one where tools collaborate, adapt, and evolve alongside the user.
+					By aligning with Muse Group and focusing on delivery through Muse Hub, we are laying the groundwork for a different kind of audio experience, one where tools collaborate, adapt, and evolve alongside the user.
 				</p>
 
 				<p class="highlight-text">
@@ -336,17 +336,19 @@
 	}
 
 	.image-content {
-		height: 250px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
+		padding: 1.25rem;
+		background: rgba(0, 0, 0, 0.35);
 	}
 
 	.featured-img {
 		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		height: auto;
+		max-height: 420px;
+		object-fit: contain;
 		display: block;
 	}
 
@@ -480,6 +482,10 @@
 
 		.feature-list li {
 			padding-left: 3rem;
+		}
+
+		.featured-img {
+			max-height: 320px;
 		}
 	}
 </style>
