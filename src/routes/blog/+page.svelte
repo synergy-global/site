@@ -4,6 +4,17 @@
 	// Blog posts data - in a real app, this would come from a CMS or API
 	const blogPosts = [
 		{
+			id: 2,
+			title: "State of Synergy 2026",
+			excerpt: "Synergy DSP is evolving from isolated plugins into a connected, AI-native audio platform built within the Muse Group ecosystem via Muse Hub.",
+			date: "2026-03-22",
+			author: "Leon Starr",
+			category: "Update",
+			readTime: "6 min read",
+			image: "/mhcs.png",
+			slug: "state-of-synergy-2026"
+		},
+		{
 			id: 1,
 			title: "The End of the GPU Tax: Why Generative DSP is the Future of Real-Time Audio",
 			excerpt: "For decades, the audio industry has relied on Classical DSP and Convolution Reverb. We believe that assumption is fundamentally broken. At Synergy DSP, we didn't just optimize an old process; we created a new paradigm: Generative DSP.",
