@@ -13,12 +13,9 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			// Looks for 'npm run build' natively without process.env bugs
-			base: typeof process !== 'undefined' && process.env.NODE_ENV === 'production'
-				? '/site'
-				: (import.meta.env?.PROD ? '/site' : '')
+			// Hardcode this while testing the github.io/site link
+			base: '/site'
 		}
-
 	}
 };
 
