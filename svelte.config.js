@@ -13,9 +13,12 @@ const config = {
 			strict: true
 		}),
 		paths: {
-	    base: process.env.NODE_ENV === 'production' ? '/site' : ''
-
+			// Looks for 'npm run build' natively without process.env bugs
+			base: typeof process !== 'undefined' && process.env.NODE_ENV === 'production'
+				? '/site'
+				: (import.meta.env?.PROD ? '/site' : '')
 		}
+
 	}
 };
 
