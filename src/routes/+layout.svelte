@@ -1,3 +1,5 @@
+export const prerender = true;
+
 <script lang="ts">
     // Remove the favicon import and use the logo directly
     import CookieConsent from '$lib/components/CookieConsent.svelte';
