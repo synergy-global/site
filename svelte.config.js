@@ -13,8 +13,8 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			// Leave this empty because your domain serves from the root
-			base: ''
+	    base: process.env.NODE_ENV === 'production' ? '/site' : ''
+
 		}
 	}
 };

@@ -30,10 +30,6 @@
 					<p>Our plugins support all major DAWs including Logic Pro, Ableton Live, FL Studio, Cubase, Studio One, and more. We provide VST3 and AU formats.</p>
 				</div>
 				<div class="faq-item">
-					<h3>Why Mac only?</h3>
-					<p>We currently focus exclusively on macOS to ensure the highest quality and performance for our plugins. This allows us to optimize our DSP algorithms specifically for Apple's hardware and audio frameworks, delivering superior real-time processing and stability. We're considering Windows support for future releases based on user demand.</p>
-				</div>
-				<div class="faq-item">
 					<h3>How do I get updates?</h3>
 					<p>Updates are free for all registered users. You'll receive email notifications when updates are available, or check your account dashboard for the latest versions.</p>
 				</div>
